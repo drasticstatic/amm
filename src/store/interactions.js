@@ -32,7 +32,9 @@ import AMM_ABI from '../abis/AMM.json';
 import config from '../config.json';
 
 export const loadProvider = (dispatch) => {
-  const provider = new ethers.providers.Web3Provider(window.ethereum)
+  const provider = window.ethereum
+    ? new ethers.providers.Web3Provider(window.ethereum)
+    : new ethers.providers.JsonRpcProvider('https://rpc.sepolia.org')
   dispatch(setProvider(provider))
 
   return provider

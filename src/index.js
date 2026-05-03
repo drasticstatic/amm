@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import App from './components/App';
+import DAppGuard from './components/DAppGuard';
 import reportWebVitals from './reportWebVitals';
 
 import { Provider } from 'react-redux';
@@ -12,7 +13,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <DAppGuard>
+        <App />
+      </DAppGuard>
     </Provider>
   </React.StrictMode>
 );
