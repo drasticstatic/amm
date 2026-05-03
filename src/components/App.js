@@ -11,6 +11,7 @@ import Swap from './Swap';
 import Deposit from './Deposit';
 import Withdraw from './Withdraw';
 import Charts from './Charts';
+import GHPagesBanner from './GHPagesBanner';
 
 import {
   loadProvider,
@@ -57,6 +58,8 @@ function App() {
   }, []);
 
   return(
+    <>
+    <GHPagesBanner />
     <Container>
       <HashRouter>
 
@@ -74,6 +77,7 @@ function App() {
         </Routes>
       </HashRouter>
     </Container>
+    </>
   )
 }
 
