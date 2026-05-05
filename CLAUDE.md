@@ -1,6 +1,6 @@
 # CLAUDE.md — amm
 
-**Status:** 🟡 On hold — DAppU class project, not currently active
+**Status:** ⏸️ Inactive — Class homework assignment, now boilerplate code and sandbox environment
 
 ---
 
@@ -23,19 +23,24 @@
 
 ---
 
+## Agent Ecosystem
+
+| Agent | Platform | Domain |
+|-------|----------|--------|
+| **Alfred** | Claude Code CLI | Primary coordinator — cross-repo housekeeping, free-model sandbox, generalist tasks (default) |
+| **Fortuna** | Claude Code CLI | Trading specialist — trading workflow, session analysis, coaching documentation (designated domain) |
+| **Kavanah** | Augment Intent | Spec-driven orchestration specialist — cross-repo coordination, documentation |
+| **Auggie** | Augment CLI | Code build specialist — Pine Script, Python, MCP servers, web3/dappu |
+
+---
+
 ## This Repo
 
 **Purpose:** DAppU Automated Market Maker (AMM) class project — Solidity smart contract implementation.
 
-**Status:** On hold. Christopher is not actively working on this repo.
+**Status:** Inactive. Christopher is not actively working on this repo.
 
-**When Active:** Auggie leads code builds (Pine Script, Python, MCP servers). Fortuna provides trading context if relevant. Kavanah handles spec-driven orchestration.
-
----
-
-## Active Work
-
-Primary active repo: `trading-assistant` — Fortuna's domain for trading analysis, session reviews, and coaching documentation.
+**When Active:** Auggie leads code builds. Fortuna provides trading context if relevant. Kavanah handles spec-driven orchestration. Alfred handles cross-repo housekeeping.
 
 ---
 
