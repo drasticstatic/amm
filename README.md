@@ -2,6 +2,7 @@
 
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen?style=flat)](https://drasticstatic.github.io/amm)
 [![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey?style=flat)](https://github.com/drasticstatic/.github)
+[![Deploy](https://github.com/drasticstatic/amm/actions/workflows/deploy.yml/badge.svg)](https://github.com/drasticstatic/amm/actions/workflows/deploy.yml)
 
 A full-stack decentralized Automated Market Maker (AMM) built on Ethereum. Users can swap between two ERC-20 tokens, provide liquidity, and withdraw — all with a live price chart tracking the AMM's bonding curve over time.
 
