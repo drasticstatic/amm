@@ -16,21 +16,23 @@
     .halo { opacity: 0 }
   </style>
   <defs>
-    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a2230"/><stop offset="1" stop-color="#101622"/></linearGradient>
-    <linearGradient id="line" gradientUnits="userSpaceOnUse" x1="668" y1="0" x2="1160" y2="0"><stop offset="0.00" stop-color="#8a6a2a"/><stop offset="0.50" stop-color="#d9a441"/><stop offset="1.00" stop-color="#e6d1a6"/></linearGradient>
-    <linearGradient id="fade" gradientUnits="userSpaceOnUse" x1="620" y1="0" x2="1200" y2="0"><stop offset="0" stop-color="#d9a441" stop-opacity="0"/><stop offset=".35" stop-color="#d9a441"/><stop offset="1" stop-color="#e6d1a6"/></linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1a2e"/><stop offset="1" stop-color="#0f3460"/></linearGradient>
+    <linearGradient id="line" gradientUnits="userSpaceOnUse" x1="668" y1="0" x2="1160" y2="0"><stop offset="0.00" stop-color="#804c5a"/><stop offset="0.50" stop-color="#b87082"/><stop offset="1.00" stop-color="#ddb5bf"/></linearGradient>
+    <linearGradient id="fade" gradientUnits="userSpaceOnUse" x1="620" y1="0" x2="1200" y2="0"><stop offset="0" stop-color="#b87082" stop-opacity="0"/><stop offset=".35" stop-color="#b87082"/><stop offset="1" stop-color="#ddb5bf"/></linearGradient>
     <clipPath id="card"><rect width="1200" height="260" rx="18"/></clipPath>
+    <radialGradient id="ember" gradientUnits="userSpaceOnUse" cx="962" cy="124" r="390"><stop offset="0" stop-color="#800020" stop-opacity=".8"/><stop offset=".6" stop-color="#5c1a2b" stop-opacity=".45"/><stop offset="1" stop-color="#5c1a2b" stop-opacity="0"/></radialGradient>
   </defs>
   <g clip-path="url(#card)">
     <!-- an opaque ground: the same picture on GitHub's light and dark themes -->
     <rect width="1200" height="260" fill="url(#ground)"/>
+    <rect width="1200" height="260" fill="url(#ember)"/>
     <circle class="breathe" cx="1013.5" cy="104.7" r="46" fill="url(#line)"/>
-    <path class="draw" pathLength="100" d="M1056.4 54.6A66 66 0 1 1 991.5 42.5" fill="none" stroke="#d9a441" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:0.20s"/>
+    <path class="draw" pathLength="100" d="M1056.4 54.6A66 66 0 1 1 991.5 42.5" fill="none" stroke="#b87082" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:0.20s"/>
     <path class="draw" pathLength="100" d="M620 164.0Q686.0 143.9 752.1 164.0Q818.1 184.1 884.1 164.0Q950.1 143.9 1016.2 164.0Q1082.2 184.1 1148.2 164.0Q1214.3 143.9 1280.3 164.0" fill="none" stroke="url(#fade)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:0.40s"/>
     <path class="draw" pathLength="100" d="M620 183.3Q689.6 172.9 759.2 183.3Q828.8 193.7 898.4 183.3Q968.0 172.9 1037.6 183.3Q1107.2 193.7 1176.8 183.3Q1246.4 172.9 1316.0 183.3" fill="none" stroke="url(#fade)" stroke-width="2.8000000000000003" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:0.90s"/>
     <path class="draw" pathLength="100" d="M620 202.7Q681.0 217.5 742.1 202.7Q803.1 187.9 864.1 202.7Q925.2 217.5 986.2 202.7Q1047.2 187.9 1108.3 202.7Q1169.3 217.5 1230.3 202.7Q1291.4 187.9 1352.4 202.7" fill="none" stroke="url(#fade)" stroke-width="2.4000000000000004" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:1.40s"/>
     <path class="draw" pathLength="100" d="M620 222.0Q691.7 237.5 763.3 222.0Q835.0 206.5 906.7 222.0Q978.4 237.5 1050.0 222.0Q1121.7 206.5 1193.4 222.0Q1265.0 237.5 1336.7 222.0" fill="none" stroke="url(#fade)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:1.90s"/>
-    <rect x="0.0" y="248" width="300.5" height="12" fill="#334155"/><rect x="300.0" y="248" width="300.5" height="12" fill="#8a6a2a"/><rect x="600.0" y="248" width="300.5" height="12" fill="#d9a441"/><rect x="900.0" y="248" width="300.5" height="12" fill="#f1f5f9"/>
-    <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif"><text x="56" y="72.0" fill="#d9a441" font-size="15" font-weight="700" letter-spacing=".6">DappU mentorship</text><text x="56" y="137.6" fill="#f1f5f9" font-size="60" font-weight="700" letter-spacing="-.5">amm</text><text x="56" y="181.4" fill="#d3d7dd" font-size="23">Swap, provide liquidity, withdraw: x · y = k</text></g>
+    <rect x="0.0" y="248" width="300.5" height="12" fill="#1a1a2e"/><rect x="300.0" y="248" width="300.5" height="12" fill="#5c1a2b"/><rect x="600.0" y="248" width="300.5" height="12" fill="#800020"/><rect x="900.0" y="248" width="300.5" height="12" fill="#fbeef1"/>
+    <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif"><text x="56" y="72.0" fill="#c78f9d" font-size="15" font-weight="700" letter-spacing=".6">DappU mentorship</text><text x="56" y="137.6" fill="#fbeef1" font-size="60" font-weight="700" letter-spacing="-.5">amm</text><text x="56" y="181.4" fill="#dcd0d6" font-size="23">Swap, provide liquidity, withdraw: x · y = k</text></g>
   </g>
 </svg>
